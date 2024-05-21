@@ -1,0 +1,137 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    width: 100%;
+    height: 90vh;
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.background {
+    background: url(z5462282026490_164da14baa497480d8e1b39e4cc1a154.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.container {
+    position: relative;
+    z-index: 1;
+    width: 80%;
+    margin: 10vh auto;
+}
+
+.title {
+    text-transform: uppercase;
+}
+
+.maxim p {
+    color: rgb(234, 207, 207);
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    margin: 30px 0 25px 0;
+    padding: 7px;
+    height: 100%;
+    font-size: 120%;    
+}
+
+.date-time {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.date-time a {
+    text-decoration: none;
+    color: white;
+}
+
+.date-time .status {
+    color: black;
+}
+
+.count-down {
+    margin: 4vh auto;
+}
+
+.count-down p {
+    font-size: 18px;
+}
+
+.count-down .time {
+    margin-top: 3vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.time div {
+    position: relative;
+    width: 70px;
+    height: 90px;
+    margin: 0 7px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 27px;
+    background: inherit;
+    background-size: cover;
+    backdrop-filter: blur(10px);
+    opacity: 0.8;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.time div::after {
+    position: absolute;
+    bottom: 2px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 15px;
+}
+
+.days::after {
+    content: 'Ngày';
+}
+
+.hours::after {
+    content: 'Giờ';
+}
+
+.minutes::after {
+    content: 'Phút';
+}
+
+.seconds::after {
+    content: 'Giây';
+}
+
+#end {
+    margin-top: 10%;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 20px;
+}

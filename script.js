@@ -60,7 +60,7 @@ let minutes = document.querySelector('.minutes');
 let seconds = document.querySelector('.seconds');
 let end = document.getElementById('end');
 
-let countDownDate = new Date('2024/06/27 08:00:00');
+let countDownDate = new Date('2025/06/26 08:00:00');
 let testDate = countDownDate.getDate();
 let testMonth = countDownDate.getMonth()+1;
 let testYear = countDownDate.getFullYear();

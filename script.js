@@ -1,6 +1,6 @@
 // get current time
 let current = new Date();
-let curYear = current.getFullYear();
+let curYear = current.getFullYear() + 1;
 
 // print current year
 let year = document.querySelector('.year');
@@ -60,9 +60,9 @@ let minutes = document.querySelector('.minutes');
 let seconds = document.querySelector('.seconds');
 let end = document.getElementById('end');
 
-let countDownDate = new Date('2025/06/25 08:00:00');
+let countDownDate = new Date('2025/06/26 08:00:00');
 let testDate = countDownDate.getDate();
-let testMonth = countDownDate.getMonth()+1;
+let testMonth = countDownDate.getMonth() + 1;
 let testYear = countDownDate.getFullYear();
 testDay.innerText = '8h:00 ' + testDate + '/' + testMonth + '/' + testYear;
 
@@ -84,7 +84,7 @@ var x = setInterval(() => {
         seconds.innerText = disSeconds;
     }
     else if ((Math.floor(distance / (1000 * 60 * 60 * 24))) <= 0 &&
-    (Math.floor(distance / (1000 * 60 * 60 * 24))) >= -1) {
+        (Math.floor(distance / (1000 * 60 * 60 * 24))) >= -1) {
         clearInterval(x);
         document.querySelector('.count-down').classList.add('hidden')
         end.innerText = "Kỳ thi đã bắt đầu!";
